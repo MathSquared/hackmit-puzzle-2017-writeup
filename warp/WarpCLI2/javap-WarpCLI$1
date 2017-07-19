@@ -1,0 +1,538 @@
+Compiled from "WarpCLI.java"
+final class WarpCLI$1 {
+  int t;
+
+  WarpCLI$1();
+    Code:
+       0: aload_0
+       1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+       4: return
+
+  public java.lang.String toString();
+    Code:
+       0: bipush        47
+       2: newarray       byte
+       4: astore_1
+       5: aload_0
+       6: ldc           #2                  // int 748549926
+       8: putfield      #3                  // Field t:I
+      11: aload_1
+      12: iconst_0
+      13: aload_0
+      14: getfield      #3                  // Field t:I
+      17: bipush        23
+      19: iushr
+      20: i2b
+      21: bastore
+      22: aload_0
+      23: ldc           #4                  // int -425196834
+      25: putfield      #3                  // Field t:I
+      28: aload_1
+      29: iconst_1
+      30: aload_0
+      31: getfield      #3                  // Field t:I
+      34: iconst_1
+      35: iushr
+      36: i2b
+      37: bastore
+      38: aload_0
+      39: ldc           #5                  // int -1488385301
+      41: putfield      #3                  // Field t:I
+      44: aload_1
+      45: iconst_2
+      46: aload_0
+      47: getfield      #3                  // Field t:I
+      50: iconst_1
+      51: iushr
+      52: i2b
+      53: bastore
+      54: aload_0
+      55: ldc           #6                  // int -47004544
+      57: putfield      #3                  // Field t:I
+      60: aload_1
+      61: iconst_3
+      62: aload_0
+      63: getfield      #3                  // Field t:I
+      66: iconst_2
+      67: iushr
+      68: i2b
+      69: bastore
+      70: aload_0
+      71: ldc           #7                  // int 1746529405
+      73: putfield      #3                  // Field t:I
+      76: aload_1
+      77: iconst_4
+      78: aload_0
+      79: getfield      #3                  // Field t:I
+      82: bipush        14
+      84: iushr
+      85: i2b
+      86: bastore
+      87: aload_0
+      88: ldc           #8                  // int 40851060
+      90: putfield      #3                  // Field t:I
+      93: aload_1
+      94: iconst_5
+      95: aload_0
+      96: getfield      #3                  // Field t:I
+      99: bipush        16
+     101: iushr
+     102: i2b
+     103: bastore
+     104: aload_0
+     105: ldc           #9                  // int 1372492033
+     107: putfield      #3                  // Field t:I
+     110: aload_1
+     111: bipush        6
+     113: aload_0
+     114: getfield      #3                  // Field t:I
+     117: bipush        13
+     119: iushr
+     120: i2b
+     121: bastore
+     122: aload_0
+     123: ldc           #10                 // int 992008675
+     125: putfield      #3                  // Field t:I
+     128: aload_1
+     129: bipush        7
+     131: aload_0
+     132: getfield      #3                  // Field t:I
+     135: bipush        16
+     137: iushr
+     138: i2b
+     139: bastore
+     140: aload_0
+     141: ldc           #11                 // int -2010302820
+     143: putfield      #3                  // Field t:I
+     146: aload_1
+     147: bipush        8
+     149: aload_0
+     150: getfield      #3                  // Field t:I
+     153: bipush        13
+     155: iushr
+     156: i2b
+     157: bastore
+     158: aload_0
+     159: ldc           #12                 // int -2116893997
+     161: putfield      #3                  // Field t:I
+     164: aload_1
+     165: bipush        9
+     167: aload_0
+     168: getfield      #3                  // Field t:I
+     171: bipush        18
+     173: iushr
+     174: i2b
+     175: bastore
+     176: aload_0
+     177: ldc           #13                 // int 2041110880
+     179: putfield      #3                  // Field t:I
+     182: aload_1
+     183: bipush        10
+     185: aload_0
+     186: getfield      #3                  // Field t:I
+     189: iconst_3
+     190: iushr
+     191: i2b
+     192: bastore
+     193: aload_0
+     194: ldc           #14                 // int 1565589771
+     196: putfield      #3                  // Field t:I
+     199: aload_1
+     200: bipush        11
+     202: aload_0
+     203: getfield      #3                  // Field t:I
+     206: bipush        11
+     208: iushr
+     209: i2b
+     210: bastore
+     211: aload_0
+     212: ldc           #15                 // int -1891992210
+     214: putfield      #3                  // Field t:I
+     217: aload_1
+     218: bipush        12
+     220: aload_0
+     221: getfield      #3                  // Field t:I
+     224: bipush        15
+     226: iushr
+     227: i2b
+     228: bastore
+     229: aload_0
+     230: ldc           #16                 // int -758013647
+     232: putfield      #3                  // Field t:I
+     235: aload_1
+     236: bipush        13
+     238: aload_0
+     239: getfield      #3                  // Field t:I
+     242: bipush        10
+     244: iushr
+     245: i2b
+     246: bastore
+     247: aload_0
+     248: ldc           #17                 // int 1623931075
+     250: putfield      #3                  // Field t:I
+     253: aload_1
+     254: bipush        14
+     256: aload_0
+     257: getfield      #3                  // Field t:I
+     260: bipush        17
+     262: iushr
+     263: i2b
+     264: bastore
+     265: aload_0
+     266: ldc           #18                 // int 1654354440
+     268: putfield      #3                  // Field t:I
+     271: aload_1
+     272: bipush        15
+     274: aload_0
+     275: getfield      #3                  // Field t:I
+     278: iconst_4
+     279: iushr
+     280: i2b
+     281: bastore
+     282: aload_0
+     283: ldc           #19                 // int 80528273
+     285: putfield      #3                  // Field t:I
+     288: aload_1
+     289: bipush        16
+     291: aload_0
+     292: getfield      #3                  // Field t:I
+     295: bipush        9
+     297: iushr
+     298: i2b
+     299: bastore
+     300: aload_0
+     301: ldc           #20                 // int -1058430535
+     303: putfield      #3                  // Field t:I
+     306: aload_1
+     307: bipush        17
+     309: aload_0
+     310: getfield      #3                  // Field t:I
+     313: iconst_2
+     314: iushr
+     315: i2b
+     316: bastore
+     317: aload_0
+     318: ldc           #21                 // int -476628894
+     320: putfield      #3                  // Field t:I
+     323: aload_1
+     324: bipush        18
+     326: aload_0
+     327: getfield      #3                  // Field t:I
+     330: bipush        12
+     332: iushr
+     333: i2b
+     334: bastore
+     335: aload_0
+     336: ldc           #22                 // int 1131905395
+     338: putfield      #3                  // Field t:I
+     341: aload_1
+     342: bipush        19
+     344: aload_0
+     345: getfield      #3                  // Field t:I
+     348: bipush        16
+     350: iushr
+     351: i2b
+     352: bastore
+     353: aload_0
+     354: ldc           #23                 // int -1143630631
+     356: putfield      #3                  // Field t:I
+     359: aload_1
+     360: bipush        20
+     362: aload_0
+     363: getfield      #3                  // Field t:I
+     366: bipush        10
+     368: iushr
+     369: i2b
+     370: bastore
+     371: aload_0
+     372: ldc           #24                 // int -2140609157
+     374: putfield      #3                  // Field t:I
+     377: aload_1
+     378: bipush        21
+     380: aload_0
+     381: getfield      #3                  // Field t:I
+     384: bipush        9
+     386: iushr
+     387: i2b
+     388: bastore
+     389: aload_0
+     390: ldc           #25                 // int 302678058
+     392: putfield      #3                  // Field t:I
+     395: aload_1
+     396: bipush        22
+     398: aload_0
+     399: getfield      #3                  // Field t:I
+     402: bipush        20
+     404: iushr
+     405: i2b
+     406: bastore
+     407: aload_0
+     408: ldc           #26                 // int 1103256152
+     410: putfield      #3                  // Field t:I
+     413: aload_1
+     414: bipush        23
+     416: aload_0
+     417: getfield      #3                  // Field t:I
+     420: bipush        6
+     422: iushr
+     423: i2b
+     424: bastore
+     425: aload_0
+     426: ldc           #27                 // int -1489313589
+     428: putfield      #3                  // Field t:I
+     431: aload_1
+     432: bipush        24
+     434: aload_0
+     435: getfield      #3                  // Field t:I
+     438: bipush        20
+     440: iushr
+     441: i2b
+     442: bastore
+     443: aload_0
+     444: ldc           #28                 // int 1732461442
+     446: putfield      #3                  // Field t:I
+     449: aload_1
+     450: bipush        25
+     452: aload_0
+     453: getfield      #3                  // Field t:I
+     456: bipush        21
+     458: iushr
+     459: i2b
+     460: bastore
+     461: aload_0
+     462: ldc           #29                 // int -1027054581
+     464: putfield      #3                  // Field t:I
+     467: aload_1
+     468: bipush        26
+     470: aload_0
+     471: getfield      #3                  // Field t:I
+     474: iconst_5
+     475: iushr
+     476: i2b
+     477: bastore
+     478: aload_0
+     479: ldc           #30                 // int -1181568997
+     481: putfield      #3                  // Field t:I
+     484: aload_1
+     485: bipush        27
+     487: aload_0
+     488: getfield      #3                  // Field t:I
+     491: bipush        14
+     493: iushr
+     494: i2b
+     495: bastore
+     496: aload_0
+     497: ldc           #31                 // int -1805456605
+     499: putfield      #3                  // Field t:I
+     502: aload_1
+     503: bipush        28
+     505: aload_0
+     506: getfield      #3                  // Field t:I
+     509: bipush        9
+     511: iushr
+     512: i2b
+     513: bastore
+     514: aload_0
+     515: ldc           #32                 // int 73864921
+     517: putfield      #3                  // Field t:I
+     520: aload_1
+     521: bipush        29
+     523: aload_0
+     524: getfield      #3                  // Field t:I
+     527: iconst_1
+     528: iushr
+     529: i2b
+     530: bastore
+     531: aload_0
+     532: ldc           #33                 // int 540478186
+     534: putfield      #3                  // Field t:I
+     537: aload_1
+     538: bipush        30
+     540: aload_0
+     541: getfield      #3                  // Field t:I
+     544: bipush        24
+     546: iushr
+     547: i2b
+     548: bastore
+     549: aload_0
+     550: ldc           #34                 // int -845574177
+     552: putfield      #3                  // Field t:I
+     555: aload_1
+     556: bipush        31
+     558: aload_0
+     559: getfield      #3                  // Field t:I
+     562: bipush        11
+     564: iushr
+     565: i2b
+     566: bastore
+     567: aload_0
+     568: ldc           #35                 // int -323940850
+     570: putfield      #3                  // Field t:I
+     573: aload_1
+     574: bipush        32
+     576: aload_0
+     577: getfield      #3                  // Field t:I
+     580: bipush        6
+     582: iushr
+     583: i2b
+     584: bastore
+     585: aload_0
+     586: ldc           #36                 // int -1474293040
+     588: putfield      #3                  // Field t:I
+     591: aload_1
+     592: bipush        33
+     594: aload_0
+     595: getfield      #3                  // Field t:I
+     598: bipush        16
+     600: iushr
+     601: i2b
+     602: bastore
+     603: aload_0
+     604: ldc           #37                 // int -183753887
+     606: putfield      #3                  // Field t:I
+     609: aload_1
+     610: bipush        34
+     612: aload_0
+     613: getfield      #3                  // Field t:I
+     616: bipush        14
+     618: iushr
+     619: i2b
+     620: bastore
+     621: aload_0
+     622: ldc           #38                 // int -194456864
+     624: putfield      #3                  // Field t:I
+     627: aload_1
+     628: bipush        35
+     630: aload_0
+     631: getfield      #3                  // Field t:I
+     634: bipush        10
+     636: iushr
+     637: i2b
+     638: bastore
+     639: aload_0
+     640: ldc           #39                 // int 1490191344
+     642: putfield      #3                  // Field t:I
+     645: aload_1
+     646: bipush        36
+     648: aload_0
+     649: getfield      #3                  // Field t:I
+     652: bipush        18
+     654: iushr
+     655: i2b
+     656: bastore
+     657: aload_0
+     658: ldc           #40                 // int 440857002
+     660: putfield      #3                  // Field t:I
+     663: aload_1
+     664: bipush        37
+     666: aload_0
+     667: getfield      #3                  // Field t:I
+     670: bipush        23
+     672: iushr
+     673: i2b
+     674: bastore
+     675: aload_0
+     676: ldc           #41                 // int -468454405
+     678: putfield      #3                  // Field t:I
+     681: aload_1
+     682: bipush        38
+     684: aload_0
+     685: getfield      #3                  // Field t:I
+     688: bipush        21
+     690: iushr
+     691: i2b
+     692: bastore
+     693: aload_0
+     694: ldc           #42                 // int 950808747
+     696: putfield      #3                  // Field t:I
+     699: aload_1
+     700: bipush        39
+     702: aload_0
+     703: getfield      #3                  // Field t:I
+     706: bipush        8
+     708: iushr
+     709: i2b
+     710: bastore
+     711: aload_0
+     712: ldc           #43                 // int 2464608
+     714: putfield      #3                  // Field t:I
+     717: aload_1
+     718: bipush        40
+     720: aload_0
+     721: getfield      #3                  // Field t:I
+     724: bipush        7
+     726: iushr
+     727: i2b
+     728: bastore
+     729: aload_0
+     730: ldc           #44                 // int -1504797676
+     732: putfield      #3                  // Field t:I
+     735: aload_1
+     736: bipush        41
+     738: aload_0
+     739: getfield      #3                  // Field t:I
+     742: bipush        14
+     744: iushr
+     745: i2b
+     746: bastore
+     747: aload_0
+     748: ldc           #45                 // int -1189592360
+     750: putfield      #3                  // Field t:I
+     753: aload_1
+     754: bipush        42
+     756: aload_0
+     757: getfield      #3                  // Field t:I
+     760: bipush        15
+     762: iushr
+     763: i2b
+     764: bastore
+     765: aload_0
+     766: ldc           #46                 // int 918513889
+     768: putfield      #3                  // Field t:I
+     771: aload_1
+     772: bipush        43
+     774: aload_0
+     775: getfield      #3                  // Field t:I
+     778: bipush        24
+     780: iushr
+     781: i2b
+     782: bastore
+     783: aload_0
+     784: ldc           #47                 // int 553146919
+     786: putfield      #3                  // Field t:I
+     789: aload_1
+     790: bipush        44
+     792: aload_0
+     793: getfield      #3                  // Field t:I
+     796: bipush        24
+     798: iushr
+     799: i2b
+     800: bastore
+     801: aload_0
+     802: ldc           #48                 // int -524605398
+     804: putfield      #3                  // Field t:I
+     807: aload_1
+     808: bipush        45
+     810: aload_0
+     811: getfield      #3                  // Field t:I
+     814: bipush        7
+     816: iushr
+     817: i2b
+     818: bastore
+     819: aload_0
+     820: ldc           #49                 // int 2033515919
+     822: putfield      #3                  // Field t:I
+     825: aload_1
+     826: bipush        46
+     828: aload_0
+     829: getfield      #3                  // Field t:I
+     832: bipush        18
+     834: iushr
+     835: i2b
+     836: bastore
+     837: new           #50                 // class java/lang/String
+     840: dup
+     841: aload_1
+     842: invokespecial #51                 // Method java/lang/String."<init>":([B)V
+     845: areturn
+}

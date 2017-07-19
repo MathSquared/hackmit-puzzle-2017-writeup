@@ -1,0 +1,20 @@
+This is the workspace I used to solve problem #5, captcha.
+
+Files I mentioned in the writeup:
+- download.py: the program to download CAPTCHAs.
+- decipher.py: basically all of the code to clean images, including the final denoise function and the sanity checks (check_labels).
+- labelit.py: the "labelit" script I used to label images.
+- labels*.json: various iterations of label files that I used to train the neural network. labels2.json is the one I used.
+- labels2: the actual labeled dataset that I used to train and test the model.
+- get_lines.py: the script I used to write out the line pattern.
+- lines.*: various representations of the lines I found.
+- brain.py: code to train and run the model.
+- main.py: code to generate and submit a solution.
+- out.json: the solution I submitted.
+
+Files I've omitted:
+- *.pyc (files deleted).
+- samples: a bunch of CAPTCHAs I downloaded (directory emptied).
+- lines.npy: a bloated binary representation of the lines I found, duplicated in lines.png and lines.py (contents replaced with 'File removed, see README').
+- out.zip: every single CAPTCHA file I classified in the actual run of the algorithm, removed to avoid committing a massive binary (contents replaced with 'File removed, see README').
+- model.*, model2.*, checkpoint: the saved versions of the models I trained; easily reproduced by running brain.py (checkpoint deleted; others replaced with 'File removed, see README').

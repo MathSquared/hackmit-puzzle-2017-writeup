@@ -1,0 +1,34 @@
+- Goal clearly to hack store
+- Comment: immediately terminates if a[i] != b[i]
+- Maybe timing attack?
+- Experiment: [timing.py]
+
+- No, that's not how you do it
+- I wonder if the badness check overrules the length check?
+- Created [template] for manual examination
+- No, doesn't seem to by examination
+
+- Maybe it checks chars one-by-one?
+- No, doesn't seem to be it
+
+- Noticed X-Upstream-Response-Time
+- Updated [timing.py]
+- JACKPOT! 2H
+- Improved w/ multiprocessing [timing2.py]
+- 2H5igrW7G
+- Broke so change to not have [0] at end of [timing2.py]
+- 2H5igrW7Gm
+- But Marty only has 50 coins! Transferred to Biff
+- Improve automation [timing3.py]
+- kFQLEzp5OS
+- Biff only has 100 coins!
+- Send back to Marty
+
+- What if I transfer to myself?
+- "you can't transfer to yourself"
+
+- Hit Transfer twice in quick succession--it works!!
+- Spam Transfer ->
+
+GOT IT
+Jan 28 3310 12:59 PM

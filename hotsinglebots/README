@@ -1,0 +1,19 @@
+This is the workspace I used to solve problem #4, hotsinglebots.
+
+Files I mentioned in the writeup:
+- model.hdf5, model.json: the model files downloaded from the site.
+- model.py: the program that loaded the model files and opened a REPL.
+- brain.py: the code that imported and ran the model.
+- deloreans, favicons: directories containing sample images that I classified in failing attempts to find the correct image online.
+- sim_anneal.py: the failed attempt at simulated annealing.
+- backprop.py: the backpropagation code that finally worked.
+- picture.png: the correct solution.
+
+Files I've omitted:
+- *.pyc (files deleted).
+- deloreans/*, favicons/*: for copyright reasons, and also because they're huge (emptied out the directories).
+- model.hdf5: the 10 MB binary containing the model weights (contents replaced with 'File removed, see README').
+- result.png: the result of my failed simulated annealing solution attempt (contents replaced with 'File removed, see README').
+
+Files I've modified:
+- pictures: the result of running the model on all images in ~/Pictures (censored the precise filenames of images, and removed the debug view of exact model scores at the beginning).

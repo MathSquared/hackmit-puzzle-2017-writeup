@@ -1,0 +1,6 @@
+#!/bin/bash
+dtstamp=$(date +'%y%m%d%H%M%S')
+mkdir model_${dtstamp} || (echo 'Directory already exists'; exit 1)
+cd model_${dtstamp}
+wget 'https://hotsinglebots.delorean.codes/api/MathSquared/model/model.json' 'https://hotsinglebots.delorean.codes/api/MathSquared/model/model.hdf5'
+cd ..

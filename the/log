@@ -1,0 +1,92 @@
+- Drill, notice React and "title" on stuff
+- Length of title is 5x length of output (11, 55); 12 shorter than input length, 2 shorter w/v spaces (first row)
+- Component posts to /api/decode
+- BUT THERE ARE AS MANY WORDS!
+- Lot of error reading...
+- It seems order-independent. Progress.
+- The title code is A=0, Z=25, space=26.
+- Plenty of misspellings; shitty codebook or something else?
+- Subbed a codeword from one place to another, flipped a bit!
+- [ciphers]
+- reelect/isnt
+- Places they modify align (both at 10)
+- reelect in 12th when sorting by reversed key
+- reelect is 10th in sorted order of keywords, but isnt lands in sixth
+- Sorting by sum of letter codes yields nothing useful, though one of them is in tenth position in the original string
+- Neither does xoring sum of codes in word, or adding mod 27 or 26
+
+We know:
+- Order doesn't matter
+- Each word corresponds to a letter and a position
+
+- Created [decode.py:decode,decode_of,main], [base.py:seqdiff,place_in_all]
+- Let's try and see what's assigned to what [study.py:get_pairs]
+- Found some data [known], wrote [study.py:format_pairs]
+- Maybe it's a codebook... wrote [study.py:attempt_uncover]
+- QoL: [:main]
+- Let's build an engine... [:attempt_uncover:basis,lower] [:attempt_uncover_all]
+
+- Does it involve system words? No, deloreon isn't in /usr/share/dict/words, even if we ignore case and apostrophes
+- Are they actual words? Seem to be, 'b' isn't a word but 'i' is
+- Is it from a text corpus? DeLoreon is BTTF
+- OOOH OOOH "a better car with ... price" https://sfy.ru/transcript/back_to_the_future_ts
+- Is this canon? http://www.scifiscripts.com/scripts/backtothefuture_transcript.txt
+- [bttf.py] [bttf] (had to change len(ENCODE) to 32)
+- Makes sense, big words mostly at back + 'deloreon', 'nickles' confirms it
+
+ 0t is
+ 1h a
+ 2e missing
+ 3  can
+ 4t know
+ 5h those
+ 6u around
+ 7m him
+ 8b roster
+ 9t isnt
+10a company
+11c under
+12k struck
+13  beer
+14o fired
+15f confrontations
+16  calls
+17l met
+18o rest
+19g einy
+20i intact
+21s tells
+22t vision
+23i more
+24c radiation
+25s aint
+26  preserver
+27b tab
+28u nightmare
+29t fiddling
+30  john
+31l idiots
+32i photographic
+33k laboratory
+34e stuck
+35  hospitals
+36t interests
+37i filthy
+38n punk
+39d cable
+40e asked
+41r mad               
+42
+43
+44
+45
+46
+47
+48
+49
+
+
+is a missing can know those around him roster isnt company under struck beer fired confrontations calls met rest einy intact tells vision more radiation aint preserver tab nightmare fiddling john idiots photographic laboratory stuck hospitals interests filthy punk cable asked mad
+
+GOT IT
+Jun 12 5329 07:38 PM

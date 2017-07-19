@@ -1,0 +1,3 @@
+#!/bin/bash
+xxd -r xxd-WarpCLI > WarpCLI.class
+java WarpCLI

@@ -1,0 +1,43 @@
+- FIXME at very top relates to /api/MathSquared/model/model.json and model.hdf5
+- Oh, it's TensorFlow. ohhhhh
+- Wrote [get_model]
+- Got model 07204545
+- Started swiping
+- 'The bot can't see you.' Oh I need a prof pic
+- Got model 702; same...
+- More swiping; 'The bot doesn't like you back.'
+- Wrote [model.py]
+- Okay, hdf5 definitely stores the weights of the model described in json
+- There's only one model; scrap directories and move it all up
+
+- Console: 'Current bot prefers a _' oooh... so we want it to match a certain thing
+- Let's load up the TF model
+- Looks like Keras is how you do it [brain.py:main,get_model]
+
+- Now, what do I feed into the model...
+- The model is a Sequential, and there was an issue loading optimizer state
+- Let's look at model.json but as a [model.yaml]
+- Input is 32x32x3, output is a number which maps into constants.js [brain.py:classes]
+- Finish model [brain.py:get_image]
+- Hints: it wants an automobile
+- Run recursively on all .jpg/.png in ~/Pictures [pictures]
+- No automobiles? Wha
+- Okay... MORE BRUTE FORCE [brain.py:classify_images]
+- Downloaded Delorean images [deloreans:0-19]
+- Let's try different interps! Still no
+
+- Automobile is usually the lowest score; we need to bring it up
+- Let's get all scores!
+
+- Maybe it's the car emoji on this channel? [deloreans/car*] No
+- Maybe it's a favicon? [favicons]
+
+- Time to create the image! SIMULATED ANNEALING BABY [sim_anneal.py] [results.png] naw screw this
+
+- Maybe this? http://web.mit.edu/profit/PDFS/DuaA.pdf https://papers.nips.cc/paper/310-closed-form-inversion-of-backpropagation-networks-theory-and-optimization-issues.pdf
+- ohhhhh https://blog.keras.io/how-convolutional-neural-networks-see-the-world.html [backprop.py]
+- YAY IT WORKED [picture.png]
+
+
+GOT IT
+Dec 27 7989 06:18 AM

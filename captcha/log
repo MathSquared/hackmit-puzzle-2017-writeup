@@ -1,0 +1,49 @@
+- Obvious step 1: download the captchas [download.py] [samples]
+- Hmm... the downloads *change*, and you only get 1K per download
+- The obfuscation pattern is the same for all of them!
+
+- https://codepen.io/birjolaxew/post/cracking-captchas-with-neural-networks - contrived, but might work
+
+- We need to prep the images: loading, thresholding, shrink-then-grow [decipher.py:preprocess,threshold,denoise]
+- This works for everything except a little part caused by the intersection of lines
+- Just eroding doesn't work
+
+- Fix: [22,14:24] is forced to black
+
+- Let's test an i... samples/10751b; separation preserved.
+
+- Now to segment. We'll segment in X axis so that i's aren't split (we could dilate but that could cause nearby letters to touch) [decipher.py:label]
+
+- Now we want a UI so *we* can label things. [labelit.py]
+- Labeled some images [labels.json]
+- Maybe reduce the erosion? Some es are becoming cs... Nope, now we have other artifacts from the lines
+
+- Probably should just get rid of the lines. Downside: if we close our is they turn into ls
+- Added more noise hotspots, still a lot of badness
+
+- Okay. I get the line pattern, remove those pixels, then do some kind of convolution on only those squares to see if we can refill them
+- Get the line pattern [get_lines.py] [lines.png] [lines.npy] [lines.py]
+- Use it to clean the image [decipher.py:denoise]; also increased threshold 128->192 (but kept at 128 to make lines broader)
+- All right, cleaning seems sufficient
+
+- Let's try out OCR
+- It can work for individual chars, probably
+- Let's do sanity checks on found letters [decipher.py:check_labels]
+- The stem of an m has 49 pixels when detached; there are also 49 in the stem of an i. feck (59 with tittle)
+- Area of a letter is 110-160-ish; if a feature has more than 205px it's probably spurious
+- Bbox should not exceed 24
+
+- OCR [ocr_letter.py] is wildly inaccurate; must use NN
+
+- Let's generate a labeled dataset [export_labeled.py] [labels2]
+- Manually hid a few bad ones
+
+- First brain: expand image to 24x24 (since we set that constraint in decipher), then run simple ML
+- Splitting labels2 with 0-6, 7-f gives 1122, 202
+- Create training utility [brain.py]
+- Run with above splits... 95.0495% accuracy?! [model*]
+- Run [main.py]
+
+
+GOT IT
+Mar 27 6541 01:21 PM

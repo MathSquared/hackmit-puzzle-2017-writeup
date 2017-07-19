@@ -1,0 +1,9 @@
+This is the workspace I used to solve problem #3, the.
+
+Files I mentioned in the writeup:
+- decode.py: the script that calls the API endpoint.
+- study.py: the script that contains attempt_uncover.
+- bttf.py: the program that produced the codebook.
+- bttf: the actual codebook from the Back To The Future script.
+
+I have deleted all .pyc files. I have made no other modifications.

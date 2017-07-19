@@ -1,0 +1,15 @@
+This is the workspace I used to solve problem #1, warp.
+
+Files I mentioned in the writeup:
+- table: the file I used to decipher the substitution cipher.
+- fixstring: the oneliner I wrote to decipher strings.
+- WarpCLI2/great_scott.jar: the JAR file I downloaded (called dl.jar in the writeup).
+- WarpCLI2/javap-*: the output of the javap and javap -c commands on the class files.
+- WarpCLI2/xxd-WarpCLI: the hexdump of WarpCLI.class, which I modified to solve the problem.
+- WarpCLI2/run: the oneliner I wrote to unhexdump WarpCLI.class and run it.
+
+Files I've omitted (contents replaced with 'File removed, see README'):
+- great_scott: the deciphered link to download the JAR file.
+- WarpCLI2/great_scott.jar: the JAR file (which just contained the .class files and some extra metadata).
+- WarpCLI/great_scott.jar: a duplicate of WarpCLI2/great_scott.jar.
+- WarpCLI2/*.class: the .class files I extracted from the JAR file (WarpCLI.class and WarpCLI-orig.class can be reconstructed from hexdumps).

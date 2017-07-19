@@ -1,0 +1,35 @@
+- Loaded warp
+- Noticed seems like simple cipher
+- Filled to [table] and extrapolated
+- Created [fixstring] to decrypt strings
+- Noticed link; decrypted to [great_scott]
+- Downloaded to [WarpCLI/great_scott.jar] (named after class inside)
+- Downloaded Java 8 (jessie-backports openjdk-8-jdk)
+- Ran
+
+WarpCLI$ java -jar great_scott.jar
+It's not your time ;)
+WarpCLI$
+
+- Copied to WarpCLI2, unzipped
+- Viewed javaps [WarpCLI2/javap-WarpCLI.java] [WarpCLI2/javap-WarpCLI$1.java]
+
+[ Looked at GA script [warp_js]; just GA ]
+
+- Viewed javaps -c [WarpCLI2/javap-WarpCLI[$1]]
+- Viewed xxd WarpCLI [WarpCLI2/xxd-WarpCLI-orig]
+- CRUCIAL OBSERVATION: 25 and 33 of javap are ifeq (99)
+- Changed to ifne (9a) [WarpCLI2/xxd-WarpCLI]
+- Moved [WC2/WarpCLI.class] -> [WC2/WarpCLI-orig.class]
+- xxd -r to [WC2/WarpCLI.class]
+- Still no...
+- Fine. goto (a7)
+- Breaks, stack canary
+- Let's try and find where it breaks... change first back to 99
+- [run]
+- Explodes at 33... progress
+- Change second to 99 or 9a, neither works
+- Using jdb, figured out must be 9a then 99 [answer]
+
+GOT IT
+Jul 18 0444 06:06 PM
