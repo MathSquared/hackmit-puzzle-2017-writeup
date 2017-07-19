@@ -11,6 +11,8 @@ This contains a writeup of my solutions to the HackMIT 2017 [admissions puzzles]
 4. `hotsinglebots`
 5. `captcha`
 
+This work is intended to supplement the [official writeup](https://medium.com/hackmit-stories/time-traveling-in-the-puzzlelorean-the-hackmit-2017-puzzle-guide-40ee4fe797f1) produced by the HackMIT organizers.
+
 License
 -
 
